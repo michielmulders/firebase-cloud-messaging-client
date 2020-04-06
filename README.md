@@ -1,3 +1,13 @@
+# To make things work
+You'll need to install firebase as a global dependency...
+
+1. On the command line run `firebase serve -p 8081` using the Firebase CLI tool to launch a local server.
+1. Open [http://localhost:8081](http://localhost:8081) in your browser.
+1. Click **REQUEST PERMISSION** button to request permission for the app to send notifications to the browser.
+
+If those steps don't work, then you need to create your own project in FCM (see readme in /messaging)
+
+
 # Firebase Quickstarts for Javascript
 
 A collection of quickstart samples demonstrating the Firebase APIs using the Javascript SDK. For more information, see [firebase.google.com/docs/web/setup](https://firebase.google.com/docs/web/setup).
