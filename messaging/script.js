@@ -62,15 +62,16 @@ function resetUI() {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    query: "mutation ($token: String!, $topics: [String]!) { registerDevice(token: $token, topics: $topics) { topics } } ",
-                    variables: { "token": currentToken, "topics": ["block_cosmos-hub-mainnet"] }
+                    query: "mutation ($token: String!, $activeNetworks: String!, $topics: [String]) { registerDevice(token: $token, activeNetworks: $activeNetworks, topics: $topics) { topics } } ",
+                    variables: { 
+                        "token": currentToken, 
+                        "activeNetworks": JSON.stringify([
+                            {"address": "cosmos12345", "networkId": "cosmos-hub-testnet"},
+                            {"address": "terra12345", "networkId": "terra-mainnet"}
+                        ])
+                        //"topics": [] //"block_cosmos-hub-mainnet"
+                    }
                 }),
-
-                // body: JSON.stringify({
-                //   // networkId: 'cosmos-hub-mainnet',
-                //   token: currentToken,
-                //   topics: ['block_cosmos-hub-mainnet']
-                // })
             })
                 .then((response) => {
                     console.log('\n\nSubscribed for: ', response)
