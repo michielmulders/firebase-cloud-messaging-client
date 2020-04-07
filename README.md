@@ -1,7 +1,7 @@
 # To make things work
 You'll need to install firebase as a global dependency...
 
-1. On the command line run `firebase serve -p 8081` using the Firebase CLI tool to launch a local server.
+1. On the command line run `firebase serve -p 8081` using the Firebase CLI tool to launch a local server. (inside of /messaging folder)
 1. Open [http://localhost:8081](http://localhost:8081) in your browser.
 1. Click **REQUEST PERMISSION** button to request permission for the app to send notifications to the browser.
 
