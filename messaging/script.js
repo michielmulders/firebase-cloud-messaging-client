@@ -66,7 +66,7 @@ function resetUI() {
                     variables: { 
                         "token": currentToken, 
                         "activeNetworks": JSON.stringify([
-                            {"address": "cosmos12345", "networkId": "cosmos-hub-testnet"},
+                            {"address": "cosmos1eexrt9ps35el5cmarmaeatr40dp6pu28egjf88", "networkId": "cosmos-hub-testnet"},
                             {"address": "terra12345", "networkId": "terra-mainnet"}
                         ])
                         //"topics": [] //"block_cosmos-hub-mainnet"
